@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/maphead"
+
+    tools:context=".ViewRubber">
+    <ScrollView
+        android:layout_below="@+id/map"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:id="@+id/head"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/viewrubber"
+        />
+
+        <FrameLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6E6FA"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+
+        >
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+        android:id="@+id/tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รายละเอียดบนยาง"
+            android:textSize="20dp"
+
+            android:textColor="#000000"
+        android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/rubberfont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tr"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
+            android:text="80/90-17 M/C 50P" />
+
+
+        <TextView
+        android:id="@+id/rubberfont1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rubberfont"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
+            android:text=" - 80 คือ ขนาดความกว้างของยาง เท่ากับ 80 มิลลิเมตร" />
+
+
+        <TextView
+        android:id="@+id/rubberfont2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rubberfont1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
+            android:text=" - 90 คือ ความสูงของแก้มยาง เท่ากับ  90% ของขนาดความกว้างของยาง" />
+
+
+        <TextView
+        android:id="@+id/rubberfont3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rubberfont2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
+            android:text=" - 17 คือ ขนาดเส้นผ่าศูนย์กลางของวงล้อเท่ากับ 17 นิ้ว" />
+
+        <TextView
+        android:id="@+id/rubberfont4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rubberfont3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
+            android:text=" - M/C คือ สำหรับรถมอเตอร์ไซค์" />
+
+
+        <TextView
+        android:id="@+id/rubberfont5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rubberfont4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
+            android:text=" - 50 คือ ดัชนีการรับน้ำหนัก (Load Index) ใช้แสดงดัชนีที่บอกน้ำหนักบรรทุกสูงสุดที่ยางสามารถรับน้ำหนักได้ ภายใต้ความดันลมยางสูงสุด" />
+
+        <TextView
+        android:id="@+id/rubberfont6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rubberfont5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
+            android:text=" - P สัญลักษณ์ความเร็ว (Speed Symbol) ใช้แสดงดัชนีที่บอกความเร็วสูงสุดของยาง เท่ากับ 150 กิโลเมตรต่อชั่วโมง" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E6E6FA"
+                    android:outlineSpotShadowColor="@color/colorPrimary"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:textSize="20dp"
+
+                            android:id="@+id/tr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ขนาดยางไซต์ต่างๆ"
+
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/viewrubber"
+                            android:textSize="20dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tr1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:text=" - 45/90-17 เท่ากับ 1.75-17" />
+
+
+                        <TextView
+                            android:textSize="20dp"
+
+                            android:id="@+id/viewrubber1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewrubber"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:text=" - 50/80-17 เท่ากับ 1.85-17" />
+
+
+                        <TextView
+                            android:textSize="20dp"
+
+                            android:id="@+id/viewrubber2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewrubber1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:text=" - 50/100-17 เท่ากับ 2.00-17" />
+
+
+                        <TextView
+                            android:textSize="20dp"
+
+                            android:id="@+id/viewrubber3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewrubber2"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:text=" - 60/90-17 เท่ากับ 2.25-17 " />
+
+                        <TextView
+                            android:textSize="20dp"
+
+                            android:id="@+id/viewrubber4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewrubber3"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:text=" - 70/90-17 เท่ากับ 2.50-17" />
+
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/taviraj"
+                    android:textSize="20dp"
+                    android:id="@+id/btnback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="กลับเมนูหลัก"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+

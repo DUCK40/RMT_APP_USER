@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+
+    android:paddingTop="2dp"
+    tools:showIn="@layout/activity_no_repair">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp">
+
+        <Button android:id="@+id/btnfrag1"
+            android:layout_width="180dp"
+            android:background="#837979"
+            android:text="งานค้าง"
+            android:textSize="20dp"/>
+
+        <Button android:id="@+id/btnfrag2"
+            android:background="#E6E6FA"
+            android:layout_width="180dp"
+            android:text="ประวัติการซ่อม"
+            android:textSize="20dp"/>
+
+
+        <!--<Button android:id="@+id/button3" android:text="Fragment 3" android:textSize="16sp"/>-->
+    </GridLayout>
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/frameLayout1"-->
+        <!--android:layout_marginBottom="5dp"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"/>
+
+</LinearLayout>

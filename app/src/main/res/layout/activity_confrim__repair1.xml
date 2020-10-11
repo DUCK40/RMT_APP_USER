@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/head"
+    tools:context=".Confrim_Repair1">
+
+
+    <ScrollView
+        android:layout_below="@+id/map"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LText1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="ค่าใช้จ่าย"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            ///TextTopicsHEAD1
+
+            ///Topics1
+            <LinearLayout
+                android:layout_below="@id/LText1"
+                android:id="@+id/LRating1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+
+                    android:text="ราคายางหน้า" />
+
+                <TextView
+                    android:id="@+id/priceRubberfont"
+                    android:layout_marginLeft="75dp"
+                    android:gravity="right"
+                    android:textSize="18dp"
+android:layout_gravity="center"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+            ///TextTopicsHEAD2
+            <LinearLayout
+                android:layout_below="@id/LRating1"
+                android:id="@+id/LText2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="ราคายางหลัง"/>
+                <TextView
+                    android:id="@+id/priceRubberback"
+                    android:layout_marginLeft="75dp"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+
+                    android:gravity="right"
+
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            ///Topics2
+            <LinearLayout
+                android:layout_below="@id/LText2"
+                android:id="@+id/LRating2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="100dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+
+                    android:layout_height="wrap_content"
+                    android:text="ค่าบริการ"/>
+
+
+                <TextView
+                    android:id="@+id/priceService"
+
+                    android:layout_marginLeft="75dp"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+
+                    android:gravity="right"
+
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+            ///Topics2
+            <LinearLayout
+                android:layout_below="@id/LRating2"
+                android:id="@+id/LRating3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="100dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+
+                    android:layout_height="wrap_content"
+                    android:text="ค่าเดินทาง"/>
+
+
+                <!--android:layout_marginLeft="97dp"-->
+
+                <TextView
+                    android:id="@+id/priceTravel"
+
+                    android:layout_marginLeft="75dp"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+
+                    android:gravity="right"
+
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+            ///Topics2
+            <LinearLayout
+                android:layout_below="@id/LRating3"
+                android:id="@+id/LRating4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="100dp"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+
+                    android:layout_height="wrap_content"
+                    android:text="ราคารวม"/>
+
+
+
+                <TextView
+                    android:id="@+id/sumprice"
+                    android:gravity="right"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="price"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+
+                    android:text="บาท"
+                    />
+
+            </LinearLayout>
+
+
+            ///TextTopicsHEAD3
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_below="@id/LRating2"
+                android:id="@+id/LText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button1"
+
+                    android:text="ตกลง"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/taviraj"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_marginLeft="20dp"
+
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/taviraj"
+                    android:id="@+id/btnCancle"
+                    android:text="ยกเลิก"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

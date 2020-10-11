@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maphead"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".duck"
+   >
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            tools:context=".Maps_Repair_Activity" />
+
+
+
+    <ScrollView
+        android:layout_below="@+id/map"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="แจ้งซ่อม"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            ///TextTopicsHEAD1
+            <LinearLayout
+                android:id="@+id/LText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/lati"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Lati"/>
+
+
+                <EditText
+                    android:id="@+id/longti"
+
+
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Longti"/>
+                <Button
+                    android:id="@+id/btngetLocation"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"/>
+
+
+
+            </LinearLayout>
+            ///Topics1
+            <LinearLayout
+                android:layout_below="@id/LText1"
+                android:id="@+id/LRating1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เบอร์ยางหน้า"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_marginLeft="75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+            ///TextTopicsHEAD2
+            <LinearLayout
+                android:layout_below="@id/LRating1"
+                android:id="@+id/LText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="17dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เบอร์ยางหลัง"/>
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_marginLeft="75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            ///Topics2
+            <LinearLayout
+                android:layout_below="@id/LText2"
+                android:id="@+id/LRating2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="จุดสังเกต"/>
+
+                <EditText
+                    android:id="@+id/edtmark"
+                    android:gravity="top"
+                    android:layout_marginLeft="95dp"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+
+                    />
+            </LinearLayout>
+
+
+            ///TextTopicsHEAD3
+            <LinearLayout
+                android:layout_below="@id/LRating2"
+                android:id="@+id/LText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button1"
+
+                    android:text="Ok"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:text="Cancel"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
